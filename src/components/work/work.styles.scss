@@ -1,0 +1,196 @@
+.work {
+  height: max-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .work-title {
+    text-align: center;
+    width: 100%;
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    background: linear-gradient(
+      241deg,
+      #a0e9ff 20%,
+      #a162e8 30%,
+      #f093b0 60%,
+      #ae3838 89%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20% 0 0 0;
+  }
+  .about-image2 {
+    position: absolute;
+    max-width: 70%;
+    max-height: 190vh;
+    transform: rotate(240deg);
+    right: 75%;
+    top: 10vh;
+  }
+  .work-proyects-container {
+    height: 90vh;
+    width: 63%;
+    margin: 10% 0 0 30%;
+    z-index: 10;
+    border-radius: 40px;
+    .work-proyect {
+      border-radius: 40px;
+      display: flex;
+      height: 50%;
+      margin-bottom: 10%;
+      .work-proyect-info {
+        margin: auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 60%;
+        width: 40%;
+        color: #a0e9ff;
+        text-align: center;
+        font-family: Bogart-Thin;
+        padding: 6%;
+        font-size: clamp(0.45rem, 1.5vw, 1.2rem);
+        background-color: #191919;
+        &.info-1 {
+          border-radius: 40px 0 0 40px;
+          margin-left: auto;
+        }
+        &.info-2 {
+          border-radius: 0 40px 40px 0;
+        }
+        .info-link {
+          text-decoration: none;
+          padding: 0 5px;
+          color: #a162e8;
+        }
+      }
+      .work-proyect-image1 {
+        width: 50%;
+        background-image: url(../../assets/images/rm1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        background-position: center;
+        transition: 0.4s ease-in;
+        border-radius: 40px;
+        cursor: pointer;
+        &:hover {
+          background-image: url(../../assets/images/rm2.jpg);
+        }
+      }
+      .work-proyect-image2 {
+        background-image: url(../../assets/images/shoes1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 50%;
+        border-radius: 40px;
+        transition: 0.4s ease-in;
+        cursor: pointer;
+        &:hover {
+          background-image: url(../../assets/images/shoes2.jpg);
+        }
+      }
+      .work-image-gradient {
+        height: 100%;
+        width: 100%;
+        z-index: 5;
+        background-image: linear-gradient(
+          241deg,
+          rgba(160, 233, 255, 0.4) 20%,
+          rgba(24, 90, 219, 0.4) 50%,
+          rgba(240, 147, 176, 0.4) 60%,
+          rgba(174, 56, 56, 0.4) 89%
+        );
+        border-radius: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .work {
+    height: max-content;
+    .work-proyects-container {
+      .work-proyect {
+        display: flex;
+        flex-direction: column;
+        .work-proyect-info {
+          height: 40%;
+          width: 30vw;
+          text-align: center;
+          &.info-1 {
+            border-radius: 40px 40px 0 0;
+            margin: 0 4vw 0 auto;
+          }
+          &.info-2 {
+            border-radius: 0 0 40px 40px;
+            margin: 0 auto 0 4vw;
+          }
+          .info-link {
+            text-decoration: none;
+            padding: 0 5px;
+            color: #a162e8;
+          }
+        }
+        .work-proyect-image1 {
+          width: 40vw;
+          height: 30vh;
+          margin-left: auto;
+        }
+        .work-proyect-image2 {
+          background-image: url(../../assets/images/shoes1.jpg);
+          width: 40vw;
+          height: 30vh;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 582px) {
+  .work {
+    .work-proyects-container {
+      .work-proyect {
+        .work-proyect-info {
+          height: 40%;
+          width: 30vw;
+          &.info-1 {
+            margin: 0 10vw 0 auto;
+          }
+          &.info-2 {
+            margin: 0 auto 0 10vw;
+          }
+        }
+        .work-proyect-image1 {
+          width: 50vw;
+          height: 30vh;
+          margin-left: auto;
+        }
+        .work-proyect-image2 {
+          background-image: url(../../assets/images/shoes1.jpg);
+          width: 50vw;
+          height: 30vh;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 418px) {
+  .work {
+    .work-proyects-container {
+      .work-proyect {
+        .work-proyect-image1 {
+          width: 50vw;
+          height: 25vh;
+        }
+        .work-proyect-image2 {
+          background-image: url(../../assets/images/shoes1.jpg);
+          width: 50vw;
+          height: 25vh;
+        }
+      }
+    }
+  }
+}

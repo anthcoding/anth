@@ -1,0 +1,58 @@
+.about {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  z-index: 200;
+  overflow: hidden;
+  height: max-content;
+  .about-info-container {
+    margin: 0 auto;
+    max-width: 90%;
+    .about-title {
+      text-align: center;
+      width: 50%;
+      margin-top: 25%;
+      font-size: clamp(1rem, 3vw, 2.5rem);
+      background: linear-gradient(
+        241deg,
+        #a0e9ff 20%,
+        #185adb 30%,
+        #f093b0 60%,
+        #ae3838 89%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-right: 1px dotted white;
+    }
+    .about-info {
+      border-right: 1px dotted white;
+      color: #a0e9ff;
+      text-align: center;
+      width: 50%;
+      font-family: Bogart-Thin;
+      padding: 2% 8%;
+      font-size: clamp(0.5rem, 1.5vw, 1.2rem);
+      .span {
+        color: #f093b0;
+      }
+    }
+  }
+  .about-image {
+    z-index: -1;
+    max-width: 90%;
+    max-height: 170vh;
+    transform: rotate(70deg);
+    right: -65%;
+    top: -10%;
+    position: absolute;
+  }
+  .about-image2 {
+    z-index: -1;
+    max-width: 70%;
+    max-height: 170vh;
+    transform: rotate(57deg);
+    right: 78%;
+    top: 50%;
+    position: absolute;
+  }
+}

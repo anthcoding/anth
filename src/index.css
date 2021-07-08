@@ -1,0 +1,22 @@
+body {
+  font-family: "Bogart";
+  background-color: #111;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Bogart";
+  src: local("Bogart"),
+    url(./assets/fonts/Bogart-Medium-trial.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Bogart-Thin";
+  src: local("Bogart"),
+    url(./assets/fonts/Bogart-Light-trial.ttf) format("truetype");
+}

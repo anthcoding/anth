@@ -1,0 +1,135 @@
+.skills {
+  margin: 10% auto 0;
+  width: 75%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  .skills-title {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 5%;
+    font-size: 2rem;
+    background: linear-gradient(
+      241deg,
+      #a0e9ff 20%,
+      #185adb 30%,
+      #f093b0 60%,
+      #ae3838 89%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .skills-image-container {
+    margin: 3% auto 0;
+    padding-top: 10%;
+    // background-color: #191919;
+    border: 3px solid #191919;
+    border-radius: 40px;
+    background-image: url(../../assets/images/manPhoto7.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 70vh;
+    width: 50vw;
+    .skills-icons-container {
+      height: 50%;
+      text-align: center;
+      .skills-icons {
+        color: #ffffff;
+        margin: 0 5%;
+        font-size: clamp(1rem, 4vw, 4rem);
+        &.html {
+          animation: float 2.5s ease-in-out infinite;
+          color: #ff5200;
+        }
+        &.css {
+          animation: float 4s ease-in-out infinite;
+          color: #264de4;
+        }
+        &.react {
+          animation: rotationFloating 15s ease-in-out infinite;
+          transform: scale(1.5);
+          color: #61dbfb;
+        }
+        &.redux {
+          animation: float 5s ease-in-out infinite;
+          color: #764abc;
+        }
+        &.git {
+          animation: float 4s ease-in-out infinite;
+          color: #f34f29;
+        }
+        &.javascript {
+          animation: float 5s ease-in-out infinite;
+          color: #f0db4f;
+        }
+        &.sass {
+          animation: float 5s ease-in-out infinite;
+          color: #cc6699;
+        }
+        &.photoshop {
+          animation: float 6s ease-in-out infinite;
+          color: #8bc3fc;
+        }
+        &.bootstrap {
+          animation: float 3s ease-in-out infinite;
+          color: #563d7c;
+        }
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: scale(1.1) translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes rotationFloating {
+  0% {
+    transform: scale(1.3) translatey(-20px) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.3) translatey(-20px) rotate(359deg);
+  }
+  100% {
+    transform: scale(1.3) translatey(-20px) rotate(0deg);
+  }
+}
+
+@media only screen and (max-width: 1111px) {
+  .skills {
+    .skills-image-container {
+      margin: 15% auto 0;
+      height: 60vh;
+      width: 60vw;
+      .skills-icons-container {
+        .skills-icons {
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 758px) {
+  .skills {
+    .skills-image-container {
+      height: 40vh;
+      width: 60vw;
+      .skills-icons-container {
+        padding-top: 20px;
+        height: 50%;
+        text-align: center;
+        .skills-icons {
+        }
+      }
+    }
+  }
+}
