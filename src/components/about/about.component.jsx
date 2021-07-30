@@ -6,7 +6,7 @@ import Skills from "../skills/skills.component";
 //IMAGES
 import BlueBg from "../../assets/images/Imagen2.png";
 //ANIMATIONS-ON-SCROLL
-import Fade from "react-reveal/Fade"; // Importing Zoom effect
+import Fade from "react-reveal/Fade";
 
 const About = () => {
   return (
@@ -16,10 +16,10 @@ const About = () => {
         <div className="about-title">About....</div>
         <div className="about-info">
           <Fade bottom>
-            I am a junior frontend web developer who invests a great deal of
-            time on learning the most recent utmost technologies. I love
-            designing websites, that is where I find the most satisfying
-            challenges as that is how my creativeness rolls out.
+            I’m always investing a great deal of time on learning the most
+            recent utmost technologies. I love designing websites, that is where
+            I find the most satisfying challenges as that is how my creativeness
+            rolls out.
             <br />
             Besides coding, you’ll find me reading some books, playing my
             guitar, and jogging all across the city with loud music on my

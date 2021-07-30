@@ -3,7 +3,6 @@ import React from "react";
 import "./home.styles.scss";
 //COMPONENTS
 import Header from "../../components/header/header.component";
-
 //IMAGES
 import ManAndLap from "../../assets/images/manPhoto6.png";
 
@@ -19,8 +18,8 @@ const HomePage = () => {
             I’m Anth.
           </div>
           <div className="title2">
-            I’m a front-end web developer based in Cuba who really loves
-            tailoring and designing the state of the art UI experience.
+            I’m a front-end web developer who really loves tailoring and
+            designing the state of the art UI experience.
           </div>
         </div>
         <div className="image-container">

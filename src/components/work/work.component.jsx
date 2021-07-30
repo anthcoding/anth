@@ -45,7 +45,7 @@ const Work = () => {
           <div className="work-proyect">
             <a
               className="work-proyect-image2"
-              href="https://github.com/anthcoding/a-shoes"
+              href="https://a-shoes.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -53,9 +53,8 @@ const Work = () => {
             </a>
             <div className="work-proyect-info info-2">
               <p>
-                This one is an E-commerce personal proyect where I used
-                technologies like Redux for the state management. I also made an
-                authentication with
+                This one is an E-commerce personal project where I used
+                technologies like Redux for the state management and
                 <a
                   className="info-link"
                   target="_blank"
@@ -64,7 +63,7 @@ const Work = () => {
                 >
                   Firebase
                 </a>
-                .
+                for authentication .
               </p>
             </div>
           </div>

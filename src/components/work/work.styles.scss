@@ -49,7 +49,7 @@
         text-align: center;
         font-family: Bogart-Thin;
         padding: 6%;
-        font-size: clamp(0.45rem, 1.5vw, 1.2rem);
+        font-size: clamp(0.55rem, 1.5vw, 1.2rem);
         background-color: #191919;
         &.info-1 {
           border-radius: 40px 0 0 40px;
@@ -156,10 +156,14 @@
           height: 40%;
           width: 30vw;
           &.info-1 {
-            margin: 0 10vw 0 auto;
+            margin: 0 9vw 0 auto;
+            width: 50%;
+            height: max-content;
           }
           &.info-2 {
-            margin: 0 auto 0 10vw;
+            margin: 0 auto 0 9vw;
+            width: 50%;
+            height: max-content;
           }
         }
         .work-proyect-image1 {
