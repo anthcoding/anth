@@ -1,3 +1,3 @@
--This is my personal portfolio ......Here you will find some projects that I have made... 
+-This is my personal portfolio ...... It's a little old so I have to updated it when get some free time :))
 
 
